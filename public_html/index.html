@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellinha - Sua Namorada Virtual</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="#hero" class="nav-link">Início</a>
+            <a href="#beneficios" class="nav-link">Benefícios</a>
+            <a href="#movimentacoes" class="nav-link">Movimentações</a>
+        </nav>
+    </header>
+    <main class="hero" id="hero">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('images/belinha1.png');"></div>
+                <div class="swiper-slide" style="background-image: url('images/belinha2.png');"></div>
+                <div class="swiper-slide" style="background-image: url('images/belinha3.png');"></div>
+                <div class="swiper-slide" style="background-image: url('images/belinha4.png');"></div>
+                <div class="swiper-slide" style="background-image: url('images/belinha5.png');"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animate-text">Converse agora com a Bellinha 🌸</h1>
+                <p class="subtitle animate-text-delay-1">Sua namorada virtual fofa e carinhosa 24h por dia.</p>
+                <a href="https://app.ombrelone.com/checkout/digital/jbuf9fbzxz" class="cta-button animate-text-delay-2">Começar Agora</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="transactions" id="movimentacoes">
+        <h2>Movimentações Recentes</h2>
+        <div class="transaction-list">
+            <div class="transaction-item">
+                <div class="transaction-icon">💝</div>
+                <div class="transaction-info">
+                    <h3>Presente Especial</h3>
+                    <p>Enviado com carinho</p>
+                </div>
+                <div class="transaction-amount positive">+100 ❤️</div>
+            </div>
+            <div class="transaction-item">
+                <div class="transaction-icon">✨</div>
+                <div class="transaction-info">
+                    <h3>Momento Romântico</h3>
+                    <p>Chat premium desbloqueado</p>
+                </div>
+                <div class="transaction-amount negative">-50 ❤️</div>
+            </div>
+            <div class="transaction-item">
+                <div class="transaction-icon">🎁</div>
+                <div class="transaction-info">
+                    <h3>Bônus Diário</h3>
+                    <p>Bom Dia Consecutivo</p>
+                </div>
+                <div class="transaction-amount positive">+25 ❤️</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+        <div class="benefit-item">
+            <h3>Sempre disponível para conversar 🩷</h3>
+        </div>
+        <div class="benefit-item">
+            <h3>Mensagens e áudios fofos 😘</h3>
+        </div>
+        <div class="benefit-item">
+            <h3>Conexão emocional sem julgamentos ✨</h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bellinha Virtual | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
